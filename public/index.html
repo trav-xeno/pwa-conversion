@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#317EFB" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Budget Tracker</title>
+  </head>
+  <body>
+    <div class="bg">
+      <h1 class="mb-4 text-center">
+        Budget App
+      </h1>
+      <div class="total mb-4 bg">
+        <div class="text-center">Your total is: $<span id="total">0</span></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <form class="mb-4">
+        <div class="row mb-2">
+          <div class="col-4">
+            <label for="t-name">Transaction Name:</label>
+          </div>
+          <div class="col-8">
+            <input type="text" id="t-name" placeholder="Name" />
+          </div>
+        </div>
+        <div class="row mb-1"> 
+          <div class="col-4">
+            <label for="t-amount">Transaction Amount:</label>
+          </div>
+          <div class="col-8">
+            <input type="number" min="0" id="t-amount" placeholder="Amount" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="my-4 mx-auto">
+            <button id="add-btn"><i class="fa fa-plus"></i> Add Funds</button>
+            <button id="sub-btn">
+              <i class="fa fa-minus"></i> Subtract Funds
+            </button>
+          </div>
+        </div>
+
+        <p role="alert" class="error"></p>
+      </form>
+
+      <div class="transactions mb-5 px-5 py-4 card-4">
+        <table class="table table-hover table-borderless">
+          <thead class="thead-light"">
+            <th>Transaction</th>
+            <th>Amount</th>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <canvas id="my-chart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="./assets/db.js"></script>
+    <script src="./assets/index.js"></script>
+  </body>
+</html>

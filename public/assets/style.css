@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7fafc;
+}
+
+button,
+input {
+  font-size: 1em;
+  font-family: Arial;
+}
+
+label {
+  font-weight: 900;
+}
+
+input {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 0.4em 0.8em;
+  background-color: #e2e8f0;
+}
+
+input:focus {
+  background-color: #ffffff;
+  border: 2px solid #cbd5e0;
+  outline: 0;
+}
+
+button {
+  background: #1f1f70;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 10px;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-4 {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bg {
+  background: linear-gradient(-45deg, #01579b, #1f1f70, #0097a7, #00897b);
+  background-size: 400% 400%;
+  color: #ffffff;
+  animation: gradient 5s ease infinite;
+}
+table {
+  width: 100%;
+}
+
+.error {
+  color: red;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.total {
+  font-size: 150%;
+}
+
+form {
+  margin-top: 25px;
+}
+
+.transactions {
+  text-align: left;
+  max-height: 400px;
+  overflow: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
