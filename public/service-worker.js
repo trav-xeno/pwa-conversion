@@ -5,14 +5,14 @@ const FILES_TO_CACHE = [
   "assets/index.js",
   "/manifest.webmanifest",
   "assets/style.css",
-  "assets/icon/budget-icon-72.png",
-  "assets/icon/budget-icon-95.png",
-  "assets/icon/budget-icon-128.png",
-  "assets/icon/budget-icon-144.png",
-  "assets/icon/budget-icon-152.png",
-  "assets/icon/budget-icon-192.png",
-  "assets/icon/budget-icon-384.png",
-  "assets/icon/budget-icon-512.png",
+  "assets/icons/budget-icon-72.png",
+  "assets/icons/budget-icon-95.png",
+  "assets/icons/budget-icon-128.png",
+  "assets/icons/budget-icon-144.png",
+  "assets/icons/budget-icon-152.png",
+  "assets/icons/budget-icon-192.png",
+  "assets/icons/budget-icon-384.png",
+  "assets/icons/budget-icon-512.png",
 ];
 
 const CACHE_NAME = "static-cache-v2";
