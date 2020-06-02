@@ -3,7 +3,7 @@ A simple budget tracker hosted on Heroku.
 converted with limited functionality to a pwa.
 
 ## Technologies 
-* mongo DB
+* mongodb
 * jquery
 * nodejs
 * express 
